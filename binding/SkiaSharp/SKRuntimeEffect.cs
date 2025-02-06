@@ -678,7 +678,6 @@ namespace SkiaSharp
 		{
 			Uniforms.Dispose ();
 			Children.Dispose ();
-			Effect.Dispose ();
 		}
 	}
 
