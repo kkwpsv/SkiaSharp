@@ -117,6 +117,8 @@ string ReduceArch(string arch)
         case "aarch64":
         case "arm64":
             return "arm64";
+        case "loongarch64":
+            return "loongarch64";
     }
 
     throw new Exception($"Unknown architecture: {arch}");
