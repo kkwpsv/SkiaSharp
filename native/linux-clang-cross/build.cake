@@ -15,7 +15,8 @@ string GetGnArgs(string arch)
         : "aarch64-linux-gnu";
 
     var sysroot = $"/usr/{toolchainArch}";
-    var init = $"'--sysroot={sysroot}', '--target={targetArch}'";
+    //var init = $"'--sysroot={sysroot}', '--target={targetArch}'";
+    var init = $"'--target={targetArch}'";
     var bin = $"'-B{sysroot}/bin/' ";
     var libs = $"'-L{sysroot}/lib/' ";
     var includes = 
